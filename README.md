@@ -31,18 +31,18 @@ yarn add auto-skeletonizer
 ```
 ⚛️ React / Next.js Usage
 ```tsx
-import { Skeleton } from "auto-skeletonizer/react";
+import { ReactSkeleton } from "auto-skeletonizer/react";
 
 export default function ProfileCard({ loading }) {
   return (
-    <Skeleton loading={loading}>
+    <ReactSkeleton loading={loading}>
       <div className="card">
         <img src="/avatar.png" />
         <h2>John Doe</h2>
         <p>Frontend Engineer</p>
         <button>Follow</button>
       </div>
-    </Skeleton>
+    </ReactSkeleton>
   );
 }
 ```
